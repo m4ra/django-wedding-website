@@ -7,3 +7,6 @@ static_root
 _working/
 data/
 guests/static/save-the-date/images/archive/
+
+# mysql config
+deploy/my.cnf
