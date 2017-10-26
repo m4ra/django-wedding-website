@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+    {% block main %}
+    <section class="no-padding" id="navigation">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+							{% for im in images %}
+                <div class="col-lg-4 col-sm-6">
+											<img src="{{im.file.url}}" class="img-responsive" alt="">
+                </div>
+							{% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
