@@ -47,7 +47,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join('bigday', 'templates'),
+            os.path.join(BASE_DIR, 'bigday', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -74,8 +74,8 @@ DATABASES = {
 #           'init_command': 'SET default_storage_engine=INNODB',
            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
            'read_default_file': os.path.join(BASE_DIR, 'deploy/my.cnf'),
-        }
-    }
+         }
+    } 
 }
 
 
