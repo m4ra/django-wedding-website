@@ -8,8 +8,11 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
+
+sys.path.insert(0, '/home/mara/mara@multiplace.org/greek-wedding')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bigday.settings")
 
