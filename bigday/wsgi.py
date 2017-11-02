@@ -12,7 +12,7 @@ import sys
 
 from django.core.wsgi import get_wsgi_application
 
-sys.path.insert(0, '/home/mara/mara@multiplace.org/greek-wedding')
+sys.path.insert(0, '/data/www/multiplace.org/mara@multiplace.org/greek-wedding')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bigday.settings")
 
