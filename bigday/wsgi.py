@@ -9,10 +9,17 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 
 import os
 import sys
+import site
+
+# Add the site-packages of the chosen virtualenv to work with
+#site.addsitedir('~/.env/local/lib/python2.7/site-packages')
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, BASE_DIR)
 
 from django.core.wsgi import get_wsgi_application
 
-sys.path.insert(0, '/data/www/multiplace.org/mara@multiplace.org/greek-wedding')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bigday.settings")
 
