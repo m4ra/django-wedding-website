@@ -6,7 +6,9 @@
             <div class="row no-gutter">
 							{% for im in images %}
                 <div class="col-lg-4 col-sm-6">
-											<img src="{{im.file.url}}" class="img-responsive" alt="">
+									<a href="{{ im.file.url }}" data-fancybox="gallery" data-caption="{{im.name}}">
+										<img src="{{im.file.url}}" class="img-responsive" alt="">
+									</a>
                 </div>
 							{% endfor %}
             </div>

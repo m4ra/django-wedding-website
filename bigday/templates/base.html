@@ -12,8 +12,12 @@
 
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
 
+		<!-- jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'bootstrap-3.3.6-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+		<link href="{% static 'fancybox/css/jquery.fancybox.min.css' %}" rel="stylesheet" />
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}" type="text/css">
@@ -45,6 +49,12 @@
             window.onresize = setFooterStyle;
         });
     </script>
+		<script type="text/javascript" src="{% static 'fancybox/js/jquery.fancybox.min.js' %}"></script>
+		<script type="text/javascript">
+		$("[data-fancybox]").fancybox({
+				speed : 600
+			});
+		</script>
 {% block page_js %}
 {% endblock %}
 </body>
