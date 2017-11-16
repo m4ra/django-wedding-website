@@ -6,6 +6,7 @@ localsettings.py
 static_root
 _working/
 data/
+media/
 guests/static/save-the-date/images/archive/
 
 # mysql config
